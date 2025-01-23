@@ -1,0 +1,81 @@
+/* General styling for the page */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #ff7e5f, #feb47b);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+  flex-direction: column; /* Align elements in column */
+  gap: 40px; /* Added space between elements */
+}
+
+/* Main container styling */
+div {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Heading styling */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff6f61;
+}
+
+/* Input fields styling */
+input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 20px 0; /* Increase the space between inputs */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
+}
+
+/* Button styling */
+button {
+  background: #ff6f61;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #e55c4f;
+  transform: scale(1.05);
+}
+
+/* Result styling - removing background box */
+h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #333;
+  background: transparent; /* Removed background box */
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: none; /* Removed box shadow */
+}
+
