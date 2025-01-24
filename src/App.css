@@ -9,8 +9,8 @@ body {
   align-items: center;
   height: 100vh;
   color: #333;
-  flex-direction: column; /* Align elements in column */
-  gap: 40px; /* Added space between elements */
+  flex-direction: column; 
+  gap: 40px; 
 }
 
 /* Main container styling */
@@ -36,7 +36,7 @@ input {
   display: block;
   width: 100%;
   padding: 12px;
-  margin: 20px 0; /* Increase the space between inputs */
+  margin: 20px 0; 
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 1rem;
@@ -67,15 +67,68 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* Result styling - removing background box */
+/* Reset button styling for separation */
+button:nth-child(2) {
+  background: #ccc;
+  color: #333;
+  margin-top: 10px;
+  border: 1px solid #bbb;
+}
+
+button:nth-child(2):hover {
+  background: #b3b3b3;
+  transform: none;
+}
+
+/* Result styling */
 h3 {
   margin-top: 20px;
   font-size: 1.5rem;
   color: #333;
-  background: transparent; /* Removed background box */
+  background: #fdf2ef; 
   padding: 10px;
   border-radius: 5px;
   display: inline-block;
-  box-shadow: none; /* Removed box shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Table styling */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  background-color: #ffffff;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #ff6f61;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  background-color: #fff;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Footer text (optional for attribution or extra info) */
+footer {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+}
